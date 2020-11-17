@@ -48,7 +48,6 @@ export default class FullGame extends Component {
     return (
       <View>
         <FullGameFeelingSports
-          gameId=["Unique game id like : 'homepage-{id}' or 'matchcenter-{id}'"]
           onCallToActionCliked={
             (error, result) => {
               switch (result) {
