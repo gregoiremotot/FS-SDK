@@ -18,18 +18,18 @@ export default class MiniGame extends Component {
     return (
       <View>
         <MiniGameFeelingSports
-            gameId=["Unique game id like : 'homepage-{id}' or 'matchcenter-{id}'"]
-            onCallToActionCliked={
-                (error, result) => {
-                    switch (result) {
-                        case 'PAGE_REDIRECT_GAMING_ZONE':
-                            // redirect the user to the Gaming Zone page
-                            break;
-                        // ...
-                    }
-                }
-            }
-        >
+          gameId=["Unique game id like : 'homepage-{id}' or 'matchcenter-{id}'"]
+          onCallToActionCliked={
+            (error, result) => {
+              switch (result) {
+                case 'PAGE_REDIRECT_GAMING_ZONE':
+                  // redirect the user to the Gaming Zone page
+                  break;
+                 // ...
+               }
+             }
+           }
+        />
       </View>
     );
   }
@@ -48,17 +48,18 @@ export default class FullGame extends Component {
     return (
       <View>
         <FullGameFeelingSports
-            onCallToActionCliked={
-                (error, result) => {
-                    switch (result) {
-                        case 'PAGE_REDIRECT_MATCH_CENTER':
-                            // redirect the user to the Match Center page
-                            break;
-                        // ...
-                    }
-                }
-            }
-        >
+          gameId=["Unique game id like : 'homepage-{id}' or 'matchcenter-{id}'"]
+          onCallToActionCliked={
+            (error, result) => {
+              switch (result) {
+                case 'PAGE_REDIRECT_MATCH_CENTER':
+                  // redirect the user to the Match Center page
+                  break;
+                 // ...
+               }
+             }
+           }
+        />
       </View>
     );
   }
