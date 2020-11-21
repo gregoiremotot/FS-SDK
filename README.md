@@ -91,8 +91,8 @@ export default class ProfileGaming extends Component {
 ### Edition Plugin
 
 ```js
-<!-- Feeling Sports Edition -->
+<!-- Feeling Sports Edition Plugin -->
   <script async src='PRIVATE_REPO/edition-plugin.js?clientId=FS-XX'></script>
-<!-- End Feeling Sports Edition -->
+<!-- End Feeling Sports Edition Plugin -->
 ```
 
