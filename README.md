@@ -18,7 +18,8 @@ export default class MiniGame extends Component {
     return (
       <View>
         <MiniGameFeelingSports
-          gameId=["Unique game id like : 'homepage-{id}' or 'matchcenter-{id}'"]
+          userId={""} // user id if the user is connected
+          gameId={""} // Unique game id like : 'homepage-{id}' or 'matchcenter-{id}'
           onCallToActionCliked={
             (error, result) => {
               switch (result) {
@@ -48,6 +49,7 @@ export default class FullGame extends Component {
     return (
       <View>
         <FullGameFeelingSports
+          userId={""} // user id if the user is connected
           onCallToActionCliked={
             (error, result) => {
               switch (result) {
@@ -58,6 +60,27 @@ export default class FullGame extends Component {
                }
              }
            }
+        />
+      </View>
+    );
+  }
+};
+```
+
+
+### Profile Gaming
+
+```js
+import React, { Component } from 'react';
+import { View } from 'react-native';
+import { ProfileGamingFeelingSports } from 'game-react-native-feeling-sports-sdk';
+
+export default class ProfileGaming extends Component {
+  render() {
+    return (
+      <View>
+        <ProfileGamingFeelingSports
+          userId={""} // user id if the user is connected
         />
       </View>
     );
