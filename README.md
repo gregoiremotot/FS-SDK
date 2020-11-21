@@ -87,3 +87,12 @@ export default class ProfileGaming extends Component {
   }
 };
 ```
+
+### Edition Plugin
+
+```js
+<!-- Feeling Sports Edition -->
+  <script async src='PRIVATE_REPO/edition-plugin.js?clientId=FS-XX'></script>
+<!-- End Feeling Sports Edition -->
+```
+
