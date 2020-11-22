@@ -9,32 +9,20 @@ npm install PRIVATE_REPO/game-react-native-feeling-sports-sdk
 ### Mini Game
 
 ```js
-import React, { Component } from 'react';
-import { View } from 'react-native';
-import { MiniGameFeelingSports } from 'game-react-native-feeling-sports-sdk';
-
-export default class MiniGame extends Component {
-  render() {
-    return (
-      <View>
-        <MiniGameFeelingSports
-          userId={""} // user id if the user is connected
-          gameId={""} // Unique game id like : 'homepage-{id}' or 'matchcenter-{id}'
-          onCallToActionCliked={
-            (error, result) => {
-              switch (result) {
-                case 'PAGE_REDIRECT_GAMING_ZONE':
-                  // redirect the user to the Gaming Zone page
-                  break;
-                 // ...
-               }
-             }
-           }
-        />
-      </View>
-    );
+<MiniGameFeelingSports
+  userId={""} // user id if the user is connected
+  gameId={""} // Unique game id like : 'homepage-{id}' or 'matchcenter-{id}'
+  onCallToActionCliked={
+    (error, result) => {
+      switch (result) {
+        case 'PAGE_REDIRECT_GAMING_ZONE':
+          // redirect the user to the Gaming Zone page
+          break;
+         // ...
+       }
+     }
   }
-};
+/>
 ```
 
 ### Full Game
@@ -71,28 +59,17 @@ export default class FullGame extends Component {
 ### Profile Gaming
 
 ```js
-import React, { Component } from 'react';
-import { View } from 'react-native';
-import { ProfileGamingFeelingSports } from 'game-react-native-feeling-sports-sdk';
-
-export default class ProfileGaming extends Component {
-  render() {
-    return (
-      <View>
-        <ProfileGamingFeelingSports
-          userId={""} // user id if the user is connected
-        />
-      </View>
-    );
-  }
-};
+<ProfileGamingFeelingSports
+  userId={""} // user id if the user is connected
+/>
 ```
 
 ### Edition Plugin
 
 ```js
 <!-- Feeling Sports Edition Plugin -->
-  <script async src='PRIVATE_REPO/edition-plugin.js?clientId=FS-XX'></script>
+<div id=''></div>
+<script async src='PRIVATE_REPO/edition-plugin.js?clientId=FS-XX'></script>
 <!-- End Feeling Sports Edition Plugin -->
 ```
 
