@@ -75,10 +75,10 @@ npm install PRIVATE_REPO/game-react-native-feeling-sports-sdk
 ```js
 {
   userId: '03087cfb-f51c-4a55',
-    notification : {
-      title: 'Tu es dans le TOP 1000',
-      body : 'Félicitations, tu es 527ème cette semaine !'
-  }
+  notification : {
+    title: 'Tu es dans le TOP 1000',
+    body : 'Félicitations, tu es 527ème cette semaine !'
+  },
   date: '2020-11-10T09:42:00.000Z'
 }
 ```
