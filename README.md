@@ -30,6 +30,7 @@ npm install PRIVATE_REPO/game-react-native-feeling-sports-sdk
 ```js
 <FSFullGame
   authToken={""} // Optional, if the user is connected
+  gameId={""} // 'predictor', 'manager', 'quiz', 'community'
   onCallToActionCliked={
     (error, result) => {
       switch (result) {
