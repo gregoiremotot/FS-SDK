@@ -64,9 +64,9 @@ npm install PRIVATE_REPO/game-react-native-feeling-sports-sdk
 
 ### Edition Plugin
 
-```js
+```html
 <!-- Feeling Sports Edition Plugin -->
-<div id='fs-edition-plugin'></div>
+<div id="fs-edition-plugin"></div>
 <script async src='PRIVATE_REPO/edition-plugin.js?clientId=FS-XX'></script>
 <!-- End Feeling Sports Edition Plugin -->
 ```
